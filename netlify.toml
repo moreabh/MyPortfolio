@@ -1,9 +1,8 @@
 [build]
-command = "npm run build"
-publish = "/build"
-base = "/"
+  publish = "."  # Root folder
+  command = ""   # No build command needed for static site
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
